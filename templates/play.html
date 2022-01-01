@@ -1,0 +1,63 @@
+<!DOCTYPE html><html>
+   <head>
+       <title>Oh_nO!</title>
+       <style>
+           .board table { border: 1px solid black; }
+           .board tr, td { border: 1px solid black; height: 60px; }
+       </style>
+   </head>
+   <body>
+       <a style="text-decoration: none" href="http://127.0.0.1:5000"><h2>Oh_nO!<span class="Searchy">NxN</span></h2></a>
+       <form action="http://127.0.0.1:5000/Start" method=POST>
+           <div class="searchbar">
+               <label>Board size: </label>
+               <input type="text" name="size" id="size" placeholder="Input Length">
+               <input type="submit" name="playButton" value="Play">
+           </div>
+       </form>
+       <form action="http://127.0.0.1:5000/Check" method=POST>
+           <div class="check">
+               <input type="submit" name="checkButton" value="Check">
+           </div>
+       </form>
+       <div class="board">
+           <table style="width:300px;">
+               <tr>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/0_0'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/0_0">X</a></th>
+               <th width=60px style="background-color:red; color:red;">X</th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/0_2'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/0_2">X</a></th>
+               <th width=60px style="background-color:red; color:red;">X</th>
+               <th width=60px style="background-color:red; color:red;">X</th>
+               </tr>
+               <tr>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/1_0'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/1_0">X</a></th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/1_1'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/1_1">X</a></th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/1_2'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/1_2">X</a></th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/1_3'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/1_3">X</a></th>
+               <th width=60px style="background-color:blue; color:white;">5</th>
+               </tr>
+               <tr>
+               <th width=60px style="background-color:blue; color:white;">2</th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/2_1'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/2_1">X</a></th>
+               <th width=60px style="background-color:blue; color:white;">2</th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/2_3'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/2_3">X</a></th>
+               <th width=60px style="background-color:blue; color:white;">3</th>
+               </tr>
+               <tr>
+               <th width=60px style="background-color:blue; color:white;">2</th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/3_1'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/3_1">X</a></th>
+               <th width=60px style="background-color:red; color:red;">X</th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/3_3'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/3_3">X</a></th>
+               <th width=60px style="background-color:blue; color:white;">4</th>
+               </tr>
+               <tr>
+               <th width=60px style="background-color:blue; color:white;">2</th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/4_1'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/4_1">X</a></th>
+               <th width=60px style="background-color:white; color:white;" onclick="window.location='http://127.0.0.1:5000/Incr/4_2'"><a style="color:LightGray;" href="http://127.0.0.1:5000/Incr/4_2">X</a></th>
+               <th width=60px style="background-color:red; color:red;">X</th>
+               <th width=60px style="background-color:blue; color:white;">3</th>
+               </tr>
+           </table>
+       </div>
+   </body>
+</html>
